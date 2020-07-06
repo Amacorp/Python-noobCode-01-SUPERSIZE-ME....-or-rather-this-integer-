@@ -1,0 +1,23 @@
+def super_size(n):
+    b = list(str(n))
+    b.sort(reverse=True)
+    return int("".join(b))
+    
+    
+or
+
+
+def super_size(n):
+    return int(''.join(sorted(str(n), reverse = True)))
+    
+    
+or
+ 
+ 
+def super_size(n):
+    list_ = sorted(list(str(n)))
+    list_.reverse()
+    return int(''.join(tuple(list_)))
+    
+    
+    
